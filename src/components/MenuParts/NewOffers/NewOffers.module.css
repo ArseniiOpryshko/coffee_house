@@ -1,0 +1,121 @@
+.new_offers{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.new_offers h1{
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.flex_component{
+    color: white;
+    width: 65%;
+    height: 65%;
+    display: flex;
+    gap: 20px;
+}
+.new_products{
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+.new_products h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.flex_products{
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua;s */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product{
+    width: 100%;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+}
+.product_inner_flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.text_part{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.text_part h4{
+    font-size: 30px;
+}
+.text_part p{
+    font-size: 25px;
+}
+.img_part{
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    border-radius: 7px;
+    background-image: url(/menu_img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.categories{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cat_block{
+    width: 100%;
+    height: 50%;
+    background-color: #00000061;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+.cat_block h2 {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-weight: bold;
+}
+.drinks_img , .sweets_img{
+    filter: brightness(0.7);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.drinks_img{
+    background-image: url(/menu_img1.png);
+}
+.sweets_img{
+    background-image: url(/menu_img2.png);
+}

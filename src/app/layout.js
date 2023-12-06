@@ -1,9 +1,11 @@
 import { Poppins } from 'next/font/google'
 import '../styles/globals.css'
-import Header from '../components/header/Header'
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 
-const inter = Poppins({ subsets: ['latin'], weight:"400" })
+const inter = Poppins({ 
+  subsets: ['latin'], 
+  weight: ['400', '500', '600', '700', '800'],
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,9 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html style={{scrollBehavior: "smooth"}} lang="en">
       <body className={inter.className}>
-        <Header>
           {children}
-        </Header>
       </body>
     </html>
   )

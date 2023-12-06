@@ -1,7 +1,7 @@
 import styles from './AboutUs.module.css'
 
 export default function AboutUsPart(){
-    return <div className={styles.about_page}>
+    return <div className={styles.about_page} id='frame2'>
         <h1>About us</h1>
         <div className={styles.categories}>
         <div className={styles.outblock}>

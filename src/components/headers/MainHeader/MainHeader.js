@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import styles from './Header.module.css'
-import Footer from '../footer/Footer'
+import styles from './MainHeader.module.css'
+import Footer from '../../footer/Footer'
 
-const Header = ({ children })=>{
+const MainHeader = ({ children })=>{
     return <>
     <div className={styles.header}>
         <ul>
@@ -20,7 +20,7 @@ const Header = ({ children })=>{
         <div className={styles.logo}></div>
         <ul>
             <li>
-                <Link href="#frame2" className={styles.link}>
+                <Link href="menu" className={styles.link}>
                     Menu
                 </Link>
             </li>
@@ -35,4 +35,4 @@ const Header = ({ children })=>{
     <Footer/>
     </>
 }
-export default Header
+export default MainHeader
