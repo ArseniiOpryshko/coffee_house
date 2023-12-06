@@ -1,0 +1,49 @@
+.footer{
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 100%;
+    padding: 2px 0;
+}
+.innerf{
+    width: 500px;
+    margin: 25px auto;
+}
+.socialmed{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.socialmed i{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height:50px;
+    transition: 0.2s;
+}
+.socialmed i:hover{
+    color: rgba(2, 37, 128, 0.399);
+}
+.other{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    cursor: pointer;
+}
+.other span{
+    transition: 0.2s;
+}
+.other span:hover{
+    color: rgba(2, 37, 128, 0.399);
+}
+.company{
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+}

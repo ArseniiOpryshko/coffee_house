@@ -1,3 +1,6 @@
+.main{
+    height: calc(100% - 130px);
+}
 .central_block{
     position: absolute;
     top: 45%;

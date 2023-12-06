@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './Header.module.css'
+import Footer from '../footer/Footer'
 
 const Header = ({ children })=>{
     return <>
@@ -31,6 +32,7 @@ const Header = ({ children })=>{
         </ul>
     </div>
     { children }
+    <Footer/>
     </>
 }
 export default Header

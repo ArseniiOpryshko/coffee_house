@@ -1,0 +1,121 @@
+.about_page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_page h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.outblock{
+    width: 210px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin: 0 40px;
+}
+.outblock h2{
+    margin-top: 10px;
+}
+.outblock p{
+    margin-top: 30px;
+}
+.catblock{
+    width: 100%;
+    height: 213px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ffdada, #e6b8b8);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.catblock div{
+    width: 70%;
+    height: 70%;
+    background-size: contain;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+}
+.catblock .img1{
+    background-image: url('/cake.png');
+    left: 53%;
+}
+
+.catblock .img2{
+    background-image: url('/glass.png');
+
+}
+.catblock .img3{
+    background-image: url('/cake.png');
+    width: 65%;
+    height: 65%;
+}
+.screen{
+    max-width: 1200px;
+    min-height: 450px;
+    margin: 30px auto 50px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    background-color: #ebebeb;;
+}
+.info{
+    width: 35%;
+    background-color: transparent;
+    padding: 15px;
+    color: black;
+    position: relative;
+}
+.info a
+{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.112);
+    border: none;
+    color: black;
+    font-size: 19px;
+    border-radius: 6px;
+    padding: 3px 5px;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.info a:hover{
+    background-color: rgba(0, 0, 0, 0.178);
+}
+.info h2{
+    margin-bottom: 20px;
+}
+.screen video{
+    background-color: black;
+    width: 65%;
+    transform: scale(1, 1.2);
+   
+}
+
+@media (max-width: 1415px){
+    .screen{
+        width: 95%;
+    }
+}
+@media (max-width: 800px){
+    .info input{
+        position: relative;
+        bottom: 0;
+    }
+}
