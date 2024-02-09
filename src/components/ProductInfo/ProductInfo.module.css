@@ -1,0 +1,86 @@
+.product_screen{
+    width: 100%;
+    height: 100vh;
+}
+.flex_parts{
+    padding-top: 50px;
+    width: 1000px;
+    /* height: 500px; */
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+.img_part{
+    width: 45%;
+    height: 430px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    /* background-color: aquamarine; */
+    background-image: url('/coffee/02.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info_part{
+    width: 50%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.name{
+    font-size: 40px;
+    text-align: center;
+}
+.description{
+    font-size: 25px;
+    word-wrap: break-word;
+    min-height: 300px;
+}
+.price{
+    font-size: 22px;
+    font-weight: 500;
+}
+.compound_block{
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    min-height: 500px;
+}
+.c_head{
+    font-size: 34px;
+}
+.compound_list{
+    margin-top: 10px;
+    width: 70%;
+    /* height: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.compound{
+    font-size: 22px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+.add_button{
+    margin-top: 25px;
+    font-size: 23px;
+    outline: none;
+    border: none;
+    width: 220px;
+    height: 50px;
+    background-color: #EA6C6C;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.add_button:hover{
+    background-color: #b13939;
+
+}

@@ -1,0 +1,76 @@
+.log_window{
+    position: relative;
+    width: 1000px;
+    height: 550px;
+    margin: 30px auto;
+    /* background-color: gray; */
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    color: white;
+}
+.content{
+    background-color: #795555;
+    width: 45%;
+    height: 100%;
+    border-radius: 16px;
+    z-index: 1;
+}
+.image{
+    position: absolute;
+    right: 0px;
+    background-image: url('/LoginImage.jpg');
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top_text{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.form input{
+    display: block;
+    width: 70%;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 16px;
+}
+.form button{
+    margin-top: 30px;
+    width: 170px;
+    height: 45px;
+    background-color: #EA6C6C;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form button:hover{
+    background-color: #f78181;
+}
+.form span{
+    color: rgb(255, 128, 128);
+    font-weight: bold;
+    font-size: 18px;
+}

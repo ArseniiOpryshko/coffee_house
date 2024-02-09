@@ -1,0 +1,15 @@
+import styles from './ProductsRange.module.css'
+import Link from 'next/link'
+
+export default function BigProductCard({sweet}){
+
+    return <Link href= {`menu/${sweet.id}`} className={styles.bigproduct}>
+            <div className={styles.img}></div>
+            <div className={styles.right}>
+                <div className={styles.innerright}>
+                    <p className={styles.label}>{sweet.name}</p>
+                    <p className={styles.text}>{sweet.description}</p>
+                </div>
+            </div>
+    </Link>
+}

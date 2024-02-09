@@ -19,7 +19,7 @@ export default function MenuPart(){
 
     </div>
     
-    <Link href="/menu">
+    <Link href="/menu" className={styles.menu_link}>
         <button className={styles.cta}>
             <span className={styles['hover-underline-animation']}> See more </span>
             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">

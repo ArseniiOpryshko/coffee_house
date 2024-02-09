@@ -18,6 +18,10 @@
 .header li{
     cursor: pointer;
     font-weight: bolder;
+    
+}
+.header .link:hover{
+    color: rgb(89, 89, 89);
 }
 .logo{
     width: 300px;
@@ -31,5 +35,6 @@
     text-decoration: none;
     cursor: pointer;
     font-weight: bolder;
-    color: black;  
+    color: black; 
+    transition: 0.2s;
 }

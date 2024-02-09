@@ -1,0 +1,152 @@
+.pagebttn, .pagebttnact{
+    outline: none;
+    border: 0;
+    padding: 3px 10px;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    margin: 0 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.pagebttn{
+    background-color: #D9D9D9;
+}
+.pagebttnact{
+    background-color: #9B9B9B;
+}
+.cart{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 60px;
+    margin: 0 auto;
+}
+.product{
+    width: 100%;
+    height: 80px;
+    background-color: #bfbfbf;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.img {
+    width: 60px;
+    height: 60px;
+    background-image: url("/coffee/02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name{
+    font-size: 23px;
+}
+.regular{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+.minus{
+    cursor: pointer;
+    background-color: #9D9D9D;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: relative;
+}
+.minus::after{
+    position: absolute;
+    content: "-";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus{
+    cursor: pointer;
+    background-color: #9D9D9D;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: relative;
+}
+.plus::after{
+    position: absolute;
+    content: "+";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.add{
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    font-size: 18px;
+    color: white;
+    background-color: #EA6C6C;
+    padding: 5px 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.del{
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    font-size: 18px;
+    color: white;
+    background-color: #42b366;
+    padding: 5px 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.confirm{
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #55BC03;
+    padding: 5px 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.confirm:hover{
+    background-color: #62d205;
+}
+
+.cart h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tinier{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.pagebttn .ref{
+    text-decoration: none;
+    color: black;
+}

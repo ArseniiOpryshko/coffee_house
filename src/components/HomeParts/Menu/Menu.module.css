@@ -66,7 +66,11 @@
 .arrow:hover{
     background-color: rgba(128, 128, 128, 0.158);
 }
+.menu_link{
+    text-decoration: none;
+}
 .cta {
+    /* text-decoration: none; */
     border: none;
     background: none;
     cursor: pointer;
