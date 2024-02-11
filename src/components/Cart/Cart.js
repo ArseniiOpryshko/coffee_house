@@ -8,7 +8,7 @@ import ProductInCart from './ProductInCart/ProductInCart';
 export default function Cart(){
     const [cart, setCart] = useState({});
     const [products, setProducts] = useState([]);
-console.log("cart", cart)
+
     useEffect(() => {
         const decodedToken = parse_token();
         const cartId = decodedToken.cartId;
@@ -36,6 +36,11 @@ console.log("cart", cart)
             </button>
         </Link>
         <button className={styles.pagebttnact}>Cart</button>
+        <Link className={styles.ref} href={'/account/admin'}>
+            <button className={styles.pagebttn}>       
+                    Admin Panel
+            </button>
+        </Link>
 
         <div className={styles.tinier}>
             <div className={styles.products}>

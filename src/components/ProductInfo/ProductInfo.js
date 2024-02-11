@@ -32,7 +32,7 @@ export default function ProductInfo({productId}){
 
     return <div className={styles.product_screen}>
         <div className={styles.flex_parts}>
-            <div className={styles.img_part}></div>
+            <img className={styles.img_part} src={"data:image/png;base64," + (product.image!=null?product.image:"") } />
             <div className={styles.info_part}>
                 <h2 className={styles.name}>{product.name}</h2>
                 <p className={styles.description}>{product.description}</p>

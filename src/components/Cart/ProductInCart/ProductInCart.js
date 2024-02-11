@@ -47,7 +47,7 @@ export default function ProductInCart({product, setCart, setProducts}){
     }
     
     return <div className={styles.product}>
-        <div className={styles.img}/>
+        <img className={styles.img} src={"data:image/png;base64," + (product.product.image!=null?product.product.image:"") } />
         <p className={styles.name}>{product.product.name}</p>
         <div className={styles.regular}>
             <span className={styles.minus} onClick={MinusHandle}></span>

@@ -70,6 +70,11 @@ export default function Account(){
                     Cart
             </button>
         </Link>
+        <Link className={styles.ref} href={'/account/admin'}>
+            <button className={styles.pagebttn}>       
+                    Admin Panel
+            </button>
+        </Link>
         <div className={styles.parts}>
             <div className={styles.left}>
                 <h3>Account properties</h3>

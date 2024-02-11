@@ -1,11 +1,11 @@
 .pagebttn, .pagebttnact{
     outline: none;
     border: 0;
-    padding: 3px 10px;
+    padding: 3px 15px;
     font-size: 20px;
     background-color: #D9D9D9;
     margin: 0 10px;
-    width: 100px;
+    /* width: 100px; */
     cursor: pointer;
 }
 .pagebttn{

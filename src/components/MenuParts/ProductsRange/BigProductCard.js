@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function BigProductCard({sweet}){
 
     return <Link href= {`menu/${sweet.id}`} className={styles.bigproduct}>
-            <div className={styles.img}></div>
+            <img className={styles.img} src={"data:image/png;base64," + (sweet.image!=null?sweet.image:"") } />
             <div className={styles.right}>
                 <div className={styles.innerright}>
                     <p className={styles.label}>{sweet.name}</p>
