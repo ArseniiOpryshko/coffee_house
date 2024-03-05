@@ -2,10 +2,12 @@
 import { useState } from 'react';
 import styles from './Registration.module.css'
 import axios from '@/app/configs/axiosWithBaseUrl';
+import { useRouter } from 'next/navigation'
 
 export default function RegistrationForm(){
     const [formData, setFormData] = useState({email: "", password: "", reppassword: ""});
     const [error, setError] = useState("");
+    const router = useRouter();
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -16,8 +18,9 @@ export default function RegistrationForm(){
         event.preventDefault();
         if (formData.password == formData.reppassword) {
             const resp = axios.post('User/register', formData);
-            console.log(resp);
+            alert("You have successfully registered");
             setError("");
+            router.push('/account');
         }
         else{
             setError("Passwords do not match!");

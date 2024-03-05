@@ -14,14 +14,12 @@ export default function ProductsRange(){
         const fetchSweets = async () => {
             const resp = await axios.get('/Product/GetSweets');
             setSweets(resp.data)
-            console.log(resp.data)
         }
         fetchSweets();
 
         const fetchDrinks = async () => {
             const resp = await axios.get('/Product/GetDrinks');
             setDrinks(resp.data)
-            console.log(resp.data)
         }
         fetchDrinks();
     }, []);

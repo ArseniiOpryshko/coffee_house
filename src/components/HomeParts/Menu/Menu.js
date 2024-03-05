@@ -1,22 +1,30 @@
+'use client'
+
+import { useEffect, useState } from 'react';
 import styles from './Menu.module.css'
 import Link from 'next/link';
+import axios from '@/app/configs/axiosWithBaseUrl';
 
 export default function MenuPart(){
+    const [drink, setDrink] = useState();
+    const [sweet, setSweet] = useState();
+
+    useEffect(()=>{
+        const fetchData = async () => {
+            const resp1 = await axios.get(`/Product/GetProductImgs?id=1`);
+            setSweet(resp1.data)
+            const resp2 = await axios.get(`/Product/GetProductImgs?id=2`);
+            setDrink(resp2.data)
+        }
+        fetchData();
+    }, [])
     return <div className={styles.menu} id="frame3">
     <h1>Product Menu</h1>
     <div className={`${styles.productblock} ${styles.coffee}`}>
-        <img src='/coffee/01_Latte.png' alt=""/>
-        <img src='/coffee/05.png' alt=""/>
-        <img src='/coffee/05.png' alt=""/>
-        <img src='/coffee/04.png' alt=""/>
-
+        {drink?.map(item => <img className={styles.img} src={"data:image/png;base64," + (item!=null?item:"") } />)}
     </div>
     <div className={`${styles.productblock} ${styles.sweets}`}>
-        <img src='/eat/eat3.png' alt=""/>
-        <img src='/eat/eat3.png' alt=""/>
-        <img src='/eat/eat4.png' alt=""/>
-        <img src='/eat/eat2.png' alt=""/>
-
+        {sweet?.map(item => <img className={styles.img} src={"data:image/png;base64," + (item!=null?item:"") } />)}
     </div>
     
     <Link href="/menu" className={styles.menu_link}>

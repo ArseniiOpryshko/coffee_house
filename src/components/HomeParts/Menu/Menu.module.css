@@ -25,7 +25,7 @@
 .productblock img{
     max-width: 300px;
     height: 300px;
-    background-color: #dddada;
+    background-color: #ffffff;
 }
 .coffee::after{
     content: "Drinks";
@@ -131,5 +131,39 @@
     }
     .menu{  
         height: auto;
+    }
+}
+@media (max-width: 700px){
+    .productblock{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .coffee::after{
+        display: none;
+    }
+    .coffee::before{
+        content: "Drinks";
+        font-size: 25px;
+        font-weight: bold;
+        color: #774545;        
+    }
+    .sweets::after{
+        display: none;
+    }
+    .sweets::before{
+        content: "Sweets";
+        font-size: 25px;
+        font-weight: bold;
+        color: #774545;        
+    }
+    .productblock img{
+        width: 100%;
+        height: 100%;
+    }
+    .cta svg{
+        display: none;
+    }
+    .cta span{
+        padding: 0;
     }
 }

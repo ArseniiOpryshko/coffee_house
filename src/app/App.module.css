@@ -45,3 +45,17 @@
 .arrow_main:hover{
     background-color: rgba(128, 128, 128, 0.158);
 }
+
+@media (max-width: 950px){
+    .central_block{
+        width: 100%;
+    }
+}
+@media (max-width: 280px){
+    .central_block h1{
+        font-size: 30px;
+    }
+    .central_block p{
+        font-size: 18px;
+    }
+}

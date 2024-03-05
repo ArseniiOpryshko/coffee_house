@@ -42,7 +42,7 @@
 }
 
 .bigproduct .img{
-    background-image: url(/coffee/02.jpg);
+    /* background-image: url(/coffee/02.jpg); */
     height: 100%;
     width: 70%;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@
 }
 
 .smallproduct .img{
-    background-image: url(/eat/eat3.png);
+    /* background-image: url(/eat/eat3.png); */
     height: 300px;
     width: 300px;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@
 .smallproduct .right{
     background-color: #D9D9D9;
     width: 100%;
-    height: 160px;
+    min-height: 160px;
     text-align: center;
     padding: 5px;
 }
@@ -109,4 +109,89 @@
 }
 .text{
     font-size: 16px;
+}
+
+@media (max-width: 1300px){
+    .products{
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+        width: 1200px;
+        grid-template-columns: 1fr 1fr;
+        width: 98%;
+    }
+    .bigproduct{
+        height: 100%;
+        grid-column: span 1;
+    }
+    .smallproduct{
+        width: 100%;
+    }
+    .drinks_range h1, .sweets_range h1{
+        width: 100%;
+        font-size: 45px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1300px){
+    .products{
+        grid-template-columns: 1fr;
+    }
+    .bigproduct{
+        min-height: 460px;
+        grid-column: span 1;
+        
+        flex-direction: column;
+    }
+    .bigproduct label{
+        font-size: 30px;
+    }
+    .bigproduct .text{
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .smallproduct{
+        width: 100%;
+        min-height: 460px;
+    }
+    .bigproduct .right{
+        background-color: #D9D9D9;
+        width: 100%;
+        height: 160px;
+        text-align: center;
+        padding: 5px;
+        position: inherit;
+    }
+    .bigproduct img{
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .bigproduct .innerright{
+        position: inherit;
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+    .drinks_range h1, .sweets_range h1{
+        width: 100%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 350px){
+    .bigproduct img{
+        height: 100%;
+        width: 100%;
+    }
+    .smallproduct .img{
+        /* background-image: url(/eat/eat3.png); */
+        width: 100%;
+    }
+    
 }

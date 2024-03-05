@@ -74,6 +74,7 @@ export default function CreatePart(){
                     <input type="text" name="name"
                         value={createForm.name}
                         onChange={handleCreateChange}
+                        required
                     />
                 </div>
                 <div className={styles.input_group}>
@@ -81,6 +82,7 @@ export default function CreatePart(){
                     <textarea name="description" className={styles.desc}
                         value={createForm.description}
                         onChange={handleCreateChange}
+                        required
                     >
                     </textarea>
                 </div>
@@ -91,12 +93,14 @@ export default function CreatePart(){
                     <input type="text" name="price"
                         value={createForm.price}
                         onChange={handleCreateChange}
+                        required
                     />
                 </div>
                 <div className={styles.input_group}>
                     <label htmlFor="image">Select image</label>
                     <input type="file" name="image"
                         onChange={handleFileUpload}
+                        required
                     />
                 </div>
                 <div className={styles.input_group}>

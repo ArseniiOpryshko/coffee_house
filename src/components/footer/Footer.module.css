@@ -48,3 +48,19 @@
     margin-top: 15px;
     font-size: 15px;
 }
+
+@media (max-width: 550px){
+    .footer{
+        height: auto;
+    }
+    .socialmed{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .other{
+        flex-wrap: wrap;
+    }
+    .innerf{
+        width: 100%;
+    }
+}

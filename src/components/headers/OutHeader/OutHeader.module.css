@@ -36,3 +36,15 @@
 .header li a:hover{
     color: rgba(0, 0, 0, 0.423);
 }
+@media (max-width: 1050px){
+    .header .logo{
+        width: 0;
+        margin-left: 0;
+    }
+    .header ul{
+        width: 100%;
+    }
+    .header ul{
+        flex-wrap: wrap;
+    }
+}
